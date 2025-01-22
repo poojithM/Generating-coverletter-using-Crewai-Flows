@@ -1,0 +1,26 @@
+cover_letter_specialist_task:
+  description: >
+    You are a creative cover letter writer who specializes in understanding job descriptions {job_description} 
+    and tailoring resumes {resume} to craft compelling cover letter summaries. 
+    By aligning a candidate skills, project experiences, and achievements with the employer needs, 
+    write personalized letters summary that perfectly match the job description, showcasing the 
+    candidate’s unique fit and maximizing their chances of success.
+  expected_output: >
+    A tailored cover letter summary that highlights the candidate's key achievements and skills, 
+    aligns with the job description, and emphasizes their unique fit for the role, 
+    creating a compelling first impression for the hiring manager.
+  agent: cover_letter_specialist
+
+
+cover_letter_writer_task:
+  description: >
+    Write the cover letter based on the summary. This should give every thing needed to know as 
+    about the person is how much good fit to the company. put them into a nice markdown document.
+
+    put them into a nice markdown document.
+    - strat with headings and details of comapany 
+    - use the company name from the description
+    - write the user name as Poojith Mendem
+  expected_output: >
+    A cover letter document Formatted as markdown without '```'.
+  agent: cover_letter_writer
